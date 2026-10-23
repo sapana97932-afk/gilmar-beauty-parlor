@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Glamour Beauty Parlour — beauty, makeup and self-care services.">
+<title>Glamour Beauty Parlour | Feel Beautiful</title>
+<style>
+:root{--pink:#fff1f5;--pink2:#f7c8d5;--rose:#a83f62;--gold:#c49a45;--ink:#39242d;--cream:#fffaf7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:#fffaf7ed;backdrop-filter:blur(10px);border-bottom:1px solid #f0dce2}
+.nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:Georgia,serif;font-size:1.35rem;color:var(--rose);font-weight:bold}.brand span{color:var(--gold)}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-size:.95rem}nav a:hover{color:var(--rose)}
+.hero{min-height:580px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:38px;max-width:1120px;margin:auto;padding:58px 22px}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;color:var(--rose);font-size:.78rem;font-weight:bold}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15}h1{font-size:clamp(2.8rem,6vw,5rem);margin:14px 0}h1 em{font-style:normal;color:var(--rose)}.hero p{max-width:520px;color:#715963;font-size:1.08rem}
+.btn{display:inline-block;border:0;border-radius:30px;padding:13px 22px;background:var(--rose);color:white;text-decoration:none;font-weight:bold;cursor:pointer}.btn.secondary{background:transparent;color:var(--rose);border:1px solid var(--rose);margin-left:8px}
+.hero-img{height:450px;border-radius:48% 48% 18px 18px;overflow:hidden;box-shadow:14px 14px 0 var(--pink2);background:#f5dfe6}.hero-img img{width:100%;height:100%;object-fit:cover}
+section{padding:72px 22px}.section-inner{max-width:1120px;margin:auto}.section-head{text-align:center;max-width:650px;margin:0 auto 34px}.section-head h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0}.section-head p{color:#795f69}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:25px;border:1px solid #f0dce2;border-radius:18px;background:white}.card .symbol{font-size:1.7rem}.card h3{font-size:1.4rem;margin:12px 0 7px}.card p{color:#795f69;margin:0 0 15px}.price{font-weight:bold;color:var(--rose)}
+.soft{background:var(--pink)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery img{width:100%;height:330px;object-fit:cover;border-radius:18px}.gallery figure{margin:0}.gallery figcaption{padding:8px 2px;font-weight:bold}
+.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}.booking-copy h2{font-size:2.6rem}.booking-copy p{color:#795f69}.booking-form{background:white;padding:28px;border:1px solid #f0dce2;border-radius:20px;box-shadow:0 12px 35px #6c35430d}
+label{display:block;font-weight:bold;font-size:.9rem;margin:0 0 6px}input,select,textarea{width:100%;padding:12px 13px;border:1px solid #e6cdd5;border-radius:10px;font:inherit;background:#fffdfd;color:var(--ink);margin-bottom:15px}input:focus,select:focus{outline:2px solid var(--pink2)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.booking-form button{width:100%;font-size:1rem}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-item{padding:22px;border-radius:16px;background:white;border:1px solid #f0dce2}.contact-item h3{margin:5px 0}.contact-item p{color:#795f69;overflow-wrap:anywhere}
+footer{text-align:center;background:#39242d;color:#fff0f5;padding:28px 20px}footer p{margin:4px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#218c55;color:white;border-radius:30px;padding:13px 18px;text-decoration:none;font-weight:bold;box-shadow:0 6px 20px #0002;z-index:20}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{grid-template-columns:1fr;padding-top:38px}.hero-img{height:330px}.cards,.gallery,.contact-grid{grid-template-columns:1fr 1fr}.booking-grid{grid-template-columns:1fr}.gallery img{height:240px}}
+@media(max-width:480px){.cards,.gallery,.contact-grid,.form-row{grid-template-columns:1fr}.hero{padding-left:18px;padding-right:18px}.hero-img{height:290px}section{padding:55px 18px}.btn.secondary{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">Glamour <span>✦</span> Beauty</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#booking">Book Now</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">Beauty · Care · Confidence</div>
+    <h1>Your beauty,<br><em>your moment.</em></h1>
+    <p>Welcome to Glamour Beauty Parlour — a little time for yourself, thoughtful beauty care, and looks that make you feel wonderful.</p>
+    <a class="btn" href="#booking">Book an appointment</a>
+    <a class="btn secondary" href="#services">Explore services</a>
+  </div>
+  <div class="hero-img"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Elegant beauty salon interior"></div>
+</section>
+<section class="soft" id="services">
+  <div class="section-inner">
+    <div class="section-head"><div class="eyebrow">A little self-care</div><h2>Our Beauty Services</h2><p>Choose your favourite treatment. Prices below are sample prices; update them to match your salon.</p></div>
+    <div class="cards">
+      <article class="card"><div class="symbol">✂️</div><h3>Haircut & Styling</h3><p>Fresh cuts and styling for your everyday look.</p><div class="price">From ₹299</div></article>
+      <article class="card"><div class="symbol">🌸</div><h3>Glow Facial</h3><p>A refreshing facial for a cared-for, radiant feel.</p><div class="price">From ₹799</div></article>
+      <article class="card"><div class="symbol">💄</div><h3>Party Makeup</h3><p>Get ready for celebrations and special evenings.</p><div class="price">From ₹1,499</div></article>
+      <article class="card"><div class="symbol">✨</div><h3>Waxing</h3><p>Personal grooming services tailored to your needs.</p><div class="price">From ₹399</div></article>
+      <article class="card"><div class="symbol">🌷</div><h3>Threading</h3><p>Neat brow shaping and facial threading.</p><div class="price">From ₹50</div></article>
+      <article class="card"><div class="symbol">👰</div><h3>Bridal Makeup</h3><p>Special-occasion glam for your memorable day.</p><div class="price">From ₹5,999</div></article>
+    </div>
+  </div>
+</section>
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-head"><div class="eyebrow">Our inspiration</div><h2>Beauty Gallery</h2><p>Example beauty and salon inspiration photos. Replace these with your own work and client photos (with permission).</p></div>
+    <div class="gallery">
+      <figure><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=85" alt="Beauty portrait inspiration"><figcaption>Beauty looks</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85" alt="Makeup tools and beauty products"><figcaption>Makeup artistry</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=700&q=85" alt="Elegant hair and beauty portrait"><figcaption>Special occasions</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="soft" id="booking">
+  <div class="section-inner booking-grid">
+    <div class="booking-copy"><div class="eyebrow">Your appointment</div><h2>Let's make time for you.</h2><p>Fill in your details and continue to WhatsApp to send your appointment request. Your booking is not confirmed until the salon replies.</p><p>♡ Personal care, lovely results, and a little time just for you.</p></div>
+    <form class="booking-form" id="bookingForm">
+      <div class="form-row"><div><label for="name">Your name</label><input id="name" name="name" required placeholder="Enter your name"></div><div><label for="phone">Phone number</label><input id="phone" name="phone" required inputmode="tel" placeholder="Your phone number"></div></div>
+      <label for="service">Choose a service</label><select id="service" name="service" required><option value="">Select a service</option><option>Haircut & Styling</option><option>Glow Facial</option><option>Party Makeup</option><option>Waxing</option><option>Threading</option><option>Bridal Makeup</option></select>
+      <div class="form-row"><div><label for="date">Preferred date</label><input id="date" name="date" type="date" required></div><div><label for="time">Preferred time</label><select id="time" name="time" required><option value="">Choose time</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option></select></div></div>
+      <label for="notes">Extra requests (optional)</label><textarea id="notes" name="notes" rows="3" placeholder="Anything you'd like us to know?"></textarea>
+      <button class="btn" type="submit">Send booking request on WhatsApp</button>
+      <p id="formMessage" aria-live="polite" style="font-size:.82rem;color:#795f69;margin-bottom:0">Demo: update the WhatsApp number in the website code before using with customers.</p>
+    </form>
+  </div>
+</section>
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head"><div class="eyebrow">We'd love to hear from you</div><h2>Contact Us</h2><p>Replace the sample contact details with your real salon information.</p></div>
+    <div class="contact-grid">
+      <div class="contact-item"><div class="symbol">📍</div><h3>Visit us</h3><p>Add your salon address here</p></div>
+      <div class="contact-item"><div class="symbol">📞</div><h3>Call us</h3><p>+91-00000-00000</p></div>
+      <div class="contact-item"><div class="symbol">💬</div><h3>WhatsApp</h3><p>Message us to ask about services and availability.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><p>© <span id="year"></span> Glamour Beauty Parlour</p><p>Made with care and a touch of sparkle ✦</p></footer>
+<a class="whatsapp" id="whatsappLink" href="#" aria-label="Contact salon on WhatsApp">☏ WhatsApp</a>
+<script>
+const WHATSAPP_NUMBER = "910000000000"; // Replace with your real country code + number, digits only.
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("whatsappLink").href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent("Hello! I would like to ask about your beauty parlour services.");
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const message = [
+    "Hello! I would like to request a beauty parlour appointment.",
+    "Name: " + data.get("name"),
+    "Phone: " + data.get("phone"),
+    "Service: " + data.get("service"),
+    "Preferred date: " + data.get("date"),
+    "Preferred time: " + data.get("time"),
+    "Extra requests: " + (data.get("notes") || "None")
+  ].join("\n");
+  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank", "noopener");
+});
+</script>
+</body>
+</html>
